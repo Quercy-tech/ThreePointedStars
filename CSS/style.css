@@ -1,0 +1,33 @@
+.content {
+    background-color: #2a2a2a; /* Gunmetal */
+}
+
+.car-section-bg {
+    background: linear-gradient(135deg, #f2f2f2, #d9d9d9);
+}
+
+.nav-border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+    background-color: #1a1a1a;
+    border: 3px solid #444;
+    color: #fff;
+}
+
+.feedback-form input[type="text"]::placeholder,
+.feedback-form textarea::placeholder {
+    color: #ccc;
+    opacity: 1;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form textarea:focus {
+    background-color: #1a1a1a;
+    color: #fff;
+    border-color: #666;
+    outline: none;
+}
