@@ -19,12 +19,13 @@
     </div>
 </nav>
 
+<!-- Headline about the car -->
 <div class="d-flex flex-column justify-content-center align-items-center mt-5">
     <h1 class="fw-bold fs-1">R107 SL560</h1>
     <h3 class="text-secondary">Beautiful power - top 2</h3>
-</div>
+</div> <!-- End of headline -->
 
-<div class="content rounded-5 pb-4"> <!-- Start of the content -->
+<main class="content rounded-5 pb-4"> <!-- Start of the content -->
 
     <div class="d-flex justify-content-center"> <!-- Main image -->
         <img src="../Media/R107_Outside.jpeg" class="img-fluid p-3 rounded-5" style="width: 100%; max-width: 1350px;" alt="Photo of Mercedes W124 from outside">
@@ -34,7 +35,7 @@
         <a href="https://en.auto-forever.com/mercedes-sl-560-r107/" target="_blank" class="text-white-50 fw-bold fs-5 mb-3 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Wonderful R107 outside</a>
     </div>
 
-    <div class="container-fluid px-5"> <!-- The content -->
+    <div class="container-fluid px-5"> <!-- Start of the description -->
         <div class="d-flex justify-content-center mb-4">
             <h2 class="fw-bold fs-2">The Timeless Roadster</h2>
         </div>
@@ -118,37 +119,41 @@
         <a href="https://www.youtube.com/watch?v=C-DEe6twFD0" target="_blank" class="text-white-50 fw-bold fs-5 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Video: "Mercedes-Benz R107 560  SL Commercial"</a>
     </div>
 
-    <div class="table-responsive mt-5 p-4"> <!-- Table with comparison of cars -->
+    <div class="table-responsive mt-5"> <!-- Table with comparison of cars -->
         <h3 class="text-center mb-4">🏁Legends Specs Comparison🏁</h3>
-        <table class="table table-bordered table-dark text-center align-middle">
+        <table class="table table-bordered table-dark text-center align-middle" aria-describedby="tableDesc">
+            <caption class="text-center text-white-50 mb-2">Comparison of C126 560 SEC, W124 Evolution II, and R107 560 SL</caption>
             <thead>
             <tr>
                 <th scope="col">Specification</th>
                 <th scope="col">C126 560 SEC</th>
-                <th scope="col">W124 Evolution II</th>
-                <th scope="col" class="text-info">R107 560 SL</th>
+                <th scope="col" class="text-info">W124 Evolution II</th>
+                <th scope="col">R107 560 SL</th>
             </tr>
             </thead>
             <tbody>
-            <tr><th>Production Years</th><td>1985 – 1991</td><td>1990</td><td>1985 – 1989</td></tr>
-            <tr><th>Body Style</th><td>2-Door Coupe</td><td>4-Door Sports Sedan</td><td>2-Door Convertible</td></tr>
-            <tr><th>Engine</th><td>5.6L V8</td><td>2.5L Inline-4 (Cosworth)</td><td>5.6L V8</td></tr>
-            <tr><th>Horsepower</th><td>275 hp</td><td>235 hp</td><td>227 hp</td></tr>
-            <tr><th>Torque</th><td>430 Nm</td><td>245 Nm</td><td>366 Nm</td></tr>
-            <tr><th>0–100 km/h</th><td>6.8 sec</td><td>7.1 sec</td><td>7.5 sec</td></tr>
-            <tr><th>Top Speed</th><td>250 km/h (limited)</td><td>250 km/h</td><td>225 km/h</td></tr>
-            <tr><th>Transmission</th><td>4-speed automatic</td><td>5-speed manual</td><td>4-speed automatic</td></tr>
-            <tr><th>Weight</th><td>1,735 kg</td><td>1,350 kg</td><td>1,730 kg</td></tr>
-            <tr><th>Drive Type</th><td>Rear-Wheel Drive (RWD)</td><td>Rear-Wheel Drive (RWD)</td><td>Rear-Wheel Drive (RWD)</td></tr>
-            <tr><th>Special Features</th>
+            <tr><th scope="row">Production Years</th><td>1985 – 1991</td><td>1990</td><td>1985 – 1989</td></tr>
+            <tr><th scope="row">Body Style</th><td>2-Door Coupe</td><td>4-Door Sports Sedan</td><td>2-Door Convertible</td></tr>
+            <tr><th scope="row">Engine</th><td>5.6L V8</td><td>2.5L Inline-4 (Cosworth)</td><td>5.6L V8</td></tr>
+            <tr><th scope="row">Horsepower</th><td>275 hp</td><td>235 hp</td><td>227 hp</td></tr>
+            <tr><th scope="row">Torque</th><td>430 Nm</td><td>245 Nm</td><td>366 Nm</td></tr>
+            <tr><th scope="row">0–100 km/h</th><td>6.8 sec</td><td>7.1 sec</td><td>7.5 sec</td></tr>
+            <tr><th scope="row">Top Speed</th><td>250 km/h (limited)</td><td>250 km/h</td><td>225 km/h</td></tr>
+            <tr><th scope="row">Transmission</th><td>4-speed automatic</td><td>5-speed manual</td><td>4-speed automatic</td></tr>
+            <tr><th scope="row">Weight</th><td>1,735 kg</td><td>1,350 kg</td><td>1,730 kg</td></tr>
+            <tr><th scope="row">Drive Type</th><td>Rear-Wheel Drive (RWD)</td><td>Rear-Wheel Drive (RWD)</td><td>Rear-Wheel Drive (RWD)</td></tr>
+            <tr><th scope="row">Special Features</th>
                 <td>Luxury + Power, Iconic Coupe</td>
                 <td>DTM-Inspired Aerodynamics, Rare Collectible</td>
                 <td>Timeless Convertible, Solid Build Quality</td>
             </tr>
             </tbody>
         </table>
+        <p id="tableDesc" class="visually-hidden">
+            Specifications comparison among three iconic Mercedes-Benz models: C126 560 SEC, W124 Evolution II, and R107 560 SL.
+        </p>
     </div> <!-- End of table -->
-</div>
+</main> <!-- End of content -->
 
 <footer>
     <div class="w-100 bg-black text-white py-4 text-center" style="font-size: 0.9rem;">

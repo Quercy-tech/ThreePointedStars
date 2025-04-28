@@ -31,3 +31,16 @@
     border-color: #666;
     outline: none;
 }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ .skip-nav-link {
+     position: absolute;
+     transform: translateY(-150%);
+ }
+
+ .skip-nav-link:focus {
+     transform: translateY(0);
+ }

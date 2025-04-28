@@ -17,8 +17,6 @@
         <a href="HTML/R107.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">R107</a>
     </div>
 </nav>
-
-<div class="content w-90 rounded-5 pb-4"> <!-- Start of the content -->
     <div class="d-flex justify-content-center"> <!-- Container for the video about Mercedes -->
         <video
                 src="Media/BestCars-2.mp4"
@@ -26,6 +24,7 @@
                 muted
                 loop
                 playsinline
+                controls
                 class="object-fit-cover rounded-5 ratio ratio-16x9"
                 aria-label="Mercedes-Benz mute looped promo video"
                 style="max-width: 100%; max-height: 75%;">
@@ -44,7 +43,10 @@
         <p class="fs-4 px-5">
             On <strong>Three-Pointed Legends</strong>, I’ll take you through my <strong>personal top three Mercedes models</strong>—a fitting tribute to the brand’s iconic <strong>three-pointed star</strong>. So, let’s dive into the legends that define the spirit of Mercedes-Benz!
         </p>
-    </div> <!-- End of text section -->
+    </div> <!-- End of website explanatory -->
+
+<main id="main-content" class="content w-90 rounded-5 pb-4"> <!-- Start of main content -->
+
     <div class="container my-5 text-center rounded-5 w-100 car-section-bg"> <!-- First container about a specific car - C126 -->
         <h2 class="fw-bold text-black pt-5">C126</h2>
         <p class="fs-4 text-black-50 p-0">The Ultimate Luxury Coupe</p>
@@ -82,8 +84,8 @@
                     <input type="text" class="form-control rounded-3 text-white" id="name" placeholder="Name*" required>
                 </div>
 
-                <div class="mb-3">
-                    <p class="mb-1">Which is your favorite Mercedes?</p>
+                <fieldset class="mb-3" aria-labelledby="favorite-mercedes-label">
+                    <legend id="favorite-mercedes-label" class="form-label">Which is your favorite Mercedes?</legend>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="mercedesChoice" id="w126" value="W126">
                         <label class="form-check-label" for="w126">C126</label>
@@ -96,15 +98,15 @@
                         <input class="form-check-input" type="radio" name="mercedesChoice" id="r107" value="R107">
                         <label class="form-check-label" for="r107">R107</label>
                     </div>
-                </div>
+                </fieldset>
 
                 <div class="mb-3">
                     <label for="thoughts" class="form-label">Your thoughts:</label>
                     <textarea class="form-control rounded-4" id="thoughts" rows="3" placeholder="Your thoughts:"></textarea>
                 </div>
 
-                <div class="mb-4">
-                    <p class="mb-1">What type of transportation do you like?</p>
+                <fieldset class="mb-4" aria-labelledby="transportation-types-label">
+                    <legend id="transportation-types-label" class="form-label">What type of transportation do you like?</legend>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="cars">
                         <label class="form-check-label" for="cars">I like cars</label>
@@ -117,7 +119,7 @@
                         <input class="form-check-input" type="checkbox" id="trains">
                         <label class="form-check-label" for="trains">I like trains</label>
                     </div>
-                </div>
+                </fieldset>
 
                 <div class="d-flex justify-content-between">
                     <button type="submit" class="btn bg-primary text-white px-4">Submit</button>
@@ -126,9 +128,10 @@
             </form>
         </div>
     </div> <!-- End of form -->
-</div> <!-- End of content -->
 
-<footer>
+</main>  <!-- End of main content -->
+
+<footer> <!-- Footer with Content Rights -->
     <div class="w-100 bg-black text-white py-4 text-center" style="font-size: 0.9rem;">
         <p class="mb-1">Created by Oleksii Hezha</p>
         <p class="mb-1">
