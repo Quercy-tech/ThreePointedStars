@@ -5,17 +5,21 @@
     <title>R107</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/print.css" media="print">
     <link rel="icon" type="image/png" href="../Media/favicon.png">
 </head>
 <body class="bg-black m-5 p-3 text-white">
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <nav>
     <div class="d-flex justify-content-around w-100 fixed-top bg-black nav-border">
-        <a href="../index.html"><img src="../Media/Logo_For_Website.png" alt="Site Logo" class="img-fluid m-2" style="max-height: 60px"></a>
+        <a href="../index.html" id="logoLink"><img src="../Media/SimpleMercedesLogo.png" alt="Mercedes Logo" class="img-fluid m-2 header-logo" id="siteLogo"><img src="../Media/MercedesTextLogo.png" alt="Site text Logo" class="img-fluid m-2 header-logo"></a>
         <a href="../index.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Home page</a>
         <a href="C126.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">C126</a>
         <a href="W124EVO2.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">W124</a>
         <a href="R107.html" class="text-white-50 fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">R107</a>
+        <button id="toggle-contrast" title="Toggle high contrast mode" class="high-contrast-toggle">🌓</button>
     </div>
 </nav>
 
@@ -25,17 +29,19 @@
     <h3 class="text-secondary">Beautiful power - top 2</h3>
 </div> <!-- End of headline -->
 
-<main class="content rounded-5 pb-4"> <!-- Start of the content -->
+<main id="main-content" class="content rounded-5 pb-4"> <!-- Start of the content -->
 
     <div class="d-flex justify-content-center"> <!-- Main image -->
-        <img src="../Media/R107_Outside.jpeg" class="img-fluid p-3 rounded-5" style="width: 100%; max-width: 1350px;" alt="Photo of Mercedes W124 from outside">
+        <a href="../Media/R107_Outside.jpeg" target="_blank">
+        <img src="../Media/R107_Outside.jpeg" class="img-fluid p-3 rounded-5 big-image"  alt="Photo of Mercedes W124 from outside">
+        </a>
     </div> <!-- End -->
 
-    <div class="d-flex justify-content-center"> <!-- Link to the images outside -->
-        <a href="https://en.auto-forever.com/mercedes-sl-560-r107/" target="_blank" class="text-white-50 fw-bold fs-5 mb-3 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Wonderful R107 outside</a>
-    </div>
+    <aside class="d-flex justify-content-center"> <!-- Link to the images outside -->
+        <a href="https://en.auto-forever.com/mercedes-sl-560-r107/" target="_blank" class="text-white-50 fw-bold fs-5 m-4 link-offset-3 link-underline-light link-underline-opacity-75">Wonderful R107 outside</a>
+    </aside>
 
-    <div class="container-fluid px-5"> <!-- Start of the description -->
+    <article class="container-fluid px-5"> <!-- Start of the description -->
         <div class="d-flex justify-content-center mb-4">
             <h2 class="fw-bold fs-2">The Timeless Roadster</h2>
         </div>
@@ -52,18 +58,22 @@
         <p class="fs-4 px-5">Even today, this car stands out like a piece of art.</p>
 
         <div class="d-flex justify-content-center"> <!-- SL560 from the 45 degrees angle -->
-            <img src="../Media/R107_Side.jpeg" class="img-fluid p-3 rounded-5" style="width: 100%; max-width: 1350px;" alt="Photo of Mercedes W124 from outside">
+            <a href="../Media/R107_Side.jpeg" target="_blank">
+            <img src="../Media/R107_Side.jpeg" class="img-fluid p-3 rounded-5 big-image" alt="Photo of Mercedes W124 from outside">
+            </a>
         </div> <!-- End -->
 
-        <div class="d-flex justify-content-center"> <!-- Link to the images engine + from the side -->
-            <a href="https://en.auto-forever.com/mercedes-sl-560-r107/" target="_blank" class="text-white-50 fw-bold fs-5 mb-3 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Incredible photos of R107</a>
-        </div>
+        <aside class="d-flex justify-content-center"> <!-- Link to the images engine + from the side -->
+            <a href="https://en.auto-forever.com/mercedes-sl-560-r107/" target="_blank" class="text-white-50 fw-bold fs-5 link-offset-3 link-underline-light link-underline-opacity-75">Incredible photos of R107</a>
+        </aside>
 
         <h3 class="mt-4 fw-bold">V8 Power for Effortless Cruising</h3>
         <p class="fs-4 px-5">Under the hood, the 560 SL packed a 5.6-liter V8, producing 227 horsepower and 366 Nm of torque. While it wasn’t a sports car, it delivered effortless acceleration and a smooth, commanding presence on the road.</p>
 
         <div class="d-flex justify-content-center"> <!-- Image of SL560 engine -->
-            <img src="../Media/R107_Engine.jpeg" class="img-fluid p-3 rounded-5" style="width: 100%; max-width: 1350px;" alt="Photo of Mercedes W124 from outside">
+            <a href="../Media/R107_Engine.jpeg" target="_blank">
+            <img src="../Media/R107_Engine.jpeg" class="img-fluid p-3 rounded-5 big-image" alt="Photo of Mercedes W124 from outside">
+            </a>
         </div> <!-- End -->
 
         <ul class="px-5 list-group-flush"> <!-- Table of core advantages -->
@@ -77,12 +87,14 @@
         <p class="fs-4 px-5">Mercedes built the 560 SL like a tank—solid, reliable, and packed with premium touches.</p>
 
         <div class="d-flex justify-content-center"> <!-- Image of SL560 inside -->
-            <img src="../Media/R107_Inside.jpeg" class="img-fluid p-3 rounded-5" style="width: 100%; max-width: 1350px;" alt="Photo of Mercedes W124 from outside">
+            <a href="../Media/R107_Inside.jpeg" target="_blank">
+            <img src="../Media/R107_Inside.jpeg" class="img-fluid p-3 rounded-5 big-image" alt="Photo of Mercedes W124 from outside">
+            </a>
         </div> <!-- End of advantages -->
 
-        <div class="d-flex justify-content-center"> <!-- Link to the images inside -->
-            <a href="https://www.theslshop.com/journal/2023/01/27/mercedes-560sl-performance-road-car/" target="_blank" class="text-white-50 fw-bold fs-5 mb-3 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Luxurious R107 inside</a>
-        </div>
+        <aside class="d-flex justify-content-center"> <!-- Link to the images inside -->
+            <a href="https://www.theslshop.com/journal/2023/01/27/mercedes-560sl-performance-road-car/" target="_blank" class="text-white-50 fw-bold fs-5 m-4 link-offset-3 link-underline-light link-underline-opacity-75">Luxurious R107 inside</a>
+        </aside>
 
         <ul class="px-5 list-group-flush">
             <li class="list-group-item fs-4">✔ Hand-stitched leather interior – Soft, luxurious, and built to last.</li>
@@ -102,7 +114,7 @@
             <li class="list-group-item fs-4">🌍 A global icon, loved by collectors and enthusiasts alike</li>
         </ul>
         <p class="fs-4 px-5">The 560 SL wasn’t just another luxury convertible—it was THE convertible of its time, and it still holds that reputation today.</p>
-    </div>
+    </article>
 
     <div class="d-flex justify-content-center mt-5 p-4"> <!-- Container for the video commercial about R107 Mercedes -->
         <video
@@ -114,16 +126,28 @@
                 style="max-width: 1300px; max-height: 1000px;">
         </video>
     </div>
+    <details class="text-white mt-3 details-car">
+      <summary class="fs-5 fw-bold">Full video description: Mercedes-Benz R107 560 SL Commercial</summary>
+      <div class="fs-5 mt-2">
+        <p>The commercial begins with the Mercedes-Benz R107 560 SL parked beside a scenic ocean cliff at golden hour. The camera slowly pans over the curves of the car, highlighting its chrome accents and the star emblem on the hood.</p>
+        <p>The R107 is shown cruising along winding coastal roads, with sunlight flickering across its polished bodywork.</p>
+        <p>Throughout the video, the narrator highlights performance, craftsmanship, and timeless design.</p>
+      </div>
+    </details>
 
-    <div class="d-flex justify-content-center"> <!-- Link to the video -->
-        <a href="https://www.youtube.com/watch?v=C-DEe6twFD0" target="_blank" class="text-white-50 fw-bold fs-5 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Video: "Mercedes-Benz R107 560  SL Commercial"</a>
-    </div>
+    <aside class="d-flex justify-content-center"> <!-- Link to the video -->
+        <a href="https://www.youtube.com/watch?v=C-DEe6twFD0" target="_blank" class="text-white-50 fw-bold fs-5 mb-3 link-offset-3 link-underline-light link-underline-opacity-75">Video: "Mercedes-Benz R107 560  SL Commercial"</a>
+    </aside>
 
     <div class="table-responsive mt-5"> <!-- Table with comparison of cars -->
         <h3 class="text-center mb-4">🏁Legends Specs Comparison🏁</h3>
         <table class="table table-bordered table-dark text-center align-middle" aria-describedby="tableDesc">
-            <caption class="text-center text-white-50 mb-2">Comparison of C126 560 SEC, W124 Evolution II, and R107 560 SL</caption>
-            <thead>
+            <caption class="text-center text-white-50 mb-2">
+                <details>
+                    <summary class="text-white">Comparison of C126 560 SEC, W124 Evolution II, and R107 560 SL</summary>
+                    This table compares key specifications such as engine, performance, and unique features of three iconic Mercedes-Benz models.
+                </details>
+            </caption>            <thead>
             <tr>
                 <th scope="col">Specification</th>
                 <th scope="col">C126 560 SEC</th>
@@ -164,6 +188,6 @@
         </p>
     </div>
 </footer>
-
+<script src="../script.js"></script>
 </body>
 </html>

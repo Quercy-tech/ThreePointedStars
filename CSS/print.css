@@ -1,0 +1,30 @@
+/* Hide unnecessary elements */
+nav,
+video,
+footer,
+form,
+button,
+input,
+textarea {
+    display: none !important;
+}
+
+/* Body and text styling for better readability and ink efficiency */
+body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-family: sans-serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    margin: 1in;
+    padding: 0;
+}
+
+/* Ensure all images fit the page and are centered */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 1rem auto;
+}
+

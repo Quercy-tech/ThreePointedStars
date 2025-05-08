@@ -5,17 +5,21 @@
     <title>W124</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/print.css" media="print">
     <link rel="icon" type="image/png" href="../Media/favicon.png">
 </head>
 <body class="bg-black m-5 p-3 text-white">
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <nav>
     <div class="d-flex justify-content-around w-100 fixed-top bg-black nav-border">
-        <a href="../index.html"><img src="../Media/Logo_For_Website.png" alt="Site Logo" class="img-fluid m-2" style="max-height: 60px"></a>
+        <a href="../index.html" id="logoLink"><img src="../Media/SimpleMercedesLogo.png" alt="Mercedes Logo" class="img-fluid m-2 header-logo header-logo" id="siteLogo"><img src="../Media/MercedesTextLogo.png" alt="Site text Logo" class="img-fluid m-2 header-logo"></a>
         <a href="../index.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Home page</a>
         <a href="C126.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">C126</a>
         <a href="W124EVO2.html" class="text-white-50 fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">W124</a>
         <a href="R107.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">R107</a>
+        <button id="toggle-contrast" title="Toggle high contrast mode" class="high-contrast-toggle">🌓</button>
     </div>
 </nav>
 
@@ -25,17 +29,19 @@
     <h3 class="text-secondary">Supercar in a suit - top 3</h3>
 </div> <!-- End of headline -->
 
-<main class="content rounded-5 pb-4"> <!-- Start of the content -->
+<main id="main-content" class="content rounded-5 pb-4"> <!-- Start of the content -->
 
     <div class="d-flex justify-content-center"> <!-- Main image -->
-        <img src="../Media/W124_Outside.jpeg" class="img-fluid p-3 rounded-5" style="width: 100%; max-width: 1350px;" alt="Photo of Mercedes W124 from outside">
+        <a href="../Media/W124_Outside.jpeg" target="_blank">
+        <img src="../Media/W124_Outside.jpeg" class="img-fluid p-3 rounded-5 big-image" alt="Photo of Mercedes W124 from outside">
+        </a>
     </div> <!-- End -->
 
-    <div class="d-flex justify-content-center"> <!-- Link to the images (inside,engine,outside) -->
-        <a href="https://www.classic-sterne.de/en/cars/car-details/mercedes-benz-560-sec-6-0-4v-amg-c126.html" target="_blank" class="text-white-50 fw-bold fs-5 mb-3 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Origin of the photos of the beautiful W124 Evo ||</a>
-    </div>
+    <aside class="d-flex justify-content-center"> <!-- Link to the images (inside,engine,outside) -->
+        <a href="https://www.classic-sterne.de/en/cars/car-details/mercedes-benz-560-sec-6-0-4v-amg-c126.html" target="_blank" class="text-white-50 fw-bold fs-5 m-4 link-offset-3 link-underline-light link-underline-opacity-75">Origin of the photos of the beautiful W124 Evo ||</a>
+    </aside>
 
-    <div class="container-fluid px-5"> <!-- The description of the car -->
+    <article class="container-fluid px-5"> <!-- The description of the car -->
         <div class="d-flex justify-content-center mb-4">
             <h2 class="fw-bold fs-2">The Supercar in a Suit</h2>
         </div>
@@ -54,7 +60,9 @@
         <p class="fs-4 px-5">Under the hood, the Evo II had a 2.5-liter, 16-valve inline-4 engine tuned by Cosworth, producing 235 horsepower. That might not sound like much today, but with its lightweight build, race suspension, and aerodynamic tweaks, the Evo II could out-handle supercars of its time.</p>
 
         <div class="d-flex justify-content-center"> <!-- Engine image -->
-            <img src="../Media/W124_Engine.jpeg" class="img-fluid m-4 p-3 rounded-5" style="width: 100%; max-width: 1350px" alt="Photo of Mercedes W124 from outside">
+            <a href="../Media/W124_Engine.jpeg" target="_blank">
+            <img src="../Media/W124_Engine.jpeg" class="img-fluid m-4 p-3 rounded-5 big-image" alt="Photo of Mercedes W124 from outside">
+            </a>
         </div> <!-- End -->
 
         <ul class="px-5 list-group-flush">
@@ -76,7 +84,9 @@
         </ul>
 
         <div class="d-flex justify-content-center"> <!-- Inside image -->
-            <img src="../Media/W124_Inside.jpeg" class="img-fluid m-4 p-3 rounded-5" style="width: 100%; max-width: 1350px" alt="Photo of Mercedes W124 from outside">
+            <a href="../Media/W124_Inside.jpeg" target="_blank">
+            <img src="../Media/W124_Inside.jpeg" class="img-fluid m-4 p-3 rounded-5 big-image" alt="Photo of Mercedes W124 from outside">
+            </a>
         </div> <!-- End -->
 
         <h3 class="mt-4 fw-bold">Why the W124 Evolution II Is a True Legend</h3>
@@ -100,15 +110,20 @@
             </video>
         </div>
 
-        <div class="d-flex justify-content-center"> <!-- Link to the video -->
-            <a href="https://www.youtube.com/watch?v=wtj2Y4nkk5g" target="_blank" class="text-white-50 fw-bold fs-5 mt-3 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Video: "Mercedes-Benz W124 Commercial"</a>
-        </div>
+        <aside class="d-flex justify-content-center"> <!-- Link to the video -->
+            <a href="https://www.youtube.com/watch?v=wtj2Y4nkk5g" target="_blank" class="text-white-50 fw-bold fs-5 m-3 link-offset-3 link-underline-light link-underline-opacity-75">Video: "Mercedes-Benz W124 Commercial"</a>
+        </aside>
 
 
         <div class="table-responsive mt-5"> <!-- Table with comparison of cars -->
             <h3 class="text-center mb-4">🏁Legends Specs Comparison🏁</h3>
             <table class="table table-bordered table-dark text-center align-middle" aria-describedby="tableDesc">
-                <caption class="text-center text-white-50 mb-2">Comparison of C126 560 SEC, W124 Evolution II, and R107 560 SL</caption>
+                <caption class="text-center text-white-50 mb-2">
+                    <details>
+                        <summary class="text-white">Comparison of C126 560 SEC, W124 Evolution II, and R107 560 SL</summary>
+                        This table compares key specifications such as engine, performance, and unique features of three iconic Mercedes-Benz models.
+                    </details>
+                </caption>
                 <thead>
                 <tr>
                     <th scope="col">Specification</th>
@@ -139,7 +154,7 @@
                 Specifications comparison among three iconic Mercedes-Benz models: C126 560 SEC, W124 Evolution II, and R107 560 SL.
             </p>
         </div>
-    </div>  <!-- End of table -->
+    </article>
 </main> <!-- End of content -->
 
 <footer>
@@ -151,6 +166,6 @@
         </p>
     </div>
 </footer>
-
+<script src="../script.js"></script>
 </body>
 </html>

@@ -5,18 +5,25 @@
     <title>Home page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/print.css" media="print">
     <link rel="icon" type="image/png" href="Media/favicon.png">
 </head>
-<body class="bg-black m-5 p-3 text-white">
+<body class="m-5 p-3 text-white black-bg">
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
 <nav>
     <div class="d-flex justify-content-around w-100 fixed-top bg-black nav-border">
-        <a href="index.html"><img src="Media/Logo_For_Website.png" alt="Site Logo" class="img-fluid m-2" style="max-height: 60px"></a>        <a href="index.html" class="text-white-50 fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Home page</a>
+        <a href="index.html" id="logoLink"><img src="Media/SimpleMercedesLogo.png" alt="Mercedes Logo" class="img-fluid m-2 header-logo" id="siteLogo"><img src="Media/MercedesTextLogo.png" alt="Site text Logo" class="img-fluid m-2 header-logo"></a>
+        <a href="index.html" class="text-white-50 fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Home page</a>
         <a href="HTML/C126.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">C126</a>
         <a href="HTML/W124EVO2.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">W124</a>
         <a href="HTML/R107.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">R107</a>
+        <button id="toggle-contrast" title="Toggle high contrast mode" class="high-contrast-toggle">🌓</button>
     </div>
 </nav>
+</header>
     <div class="d-flex justify-content-center"> <!-- Container for the video about Mercedes -->
         <video
                 src="Media/BestCars-2.mp4"
@@ -25,14 +32,13 @@
                 loop
                 playsinline
                 controls
-                class="object-fit-cover rounded-5 ratio ratio-16x9"
-                aria-label="Mercedes-Benz mute looped promo video"
-                style="max-width: 100%; max-height: 75%;">
+                class="object-fit-cover mt-4 rounded-5 ratio ratio-16x9 main-video"
+                aria-label="Mercedes-Benz mute looped promo video">
         </video>
     </div> <!-- End of video container -->
 
     <div class="d-flex justify-content-center"> <!-- Link to the video -->
-        <a href="https://www.youtube.com/watch?v=Jxm206I9Z6s&t=1s" target="_blank" class="text-white-50 fw-bold fs-5 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Video: "Mercedes-Benz Classic – Dream Cars"</a>
+        <a href="https://www.youtube.com/watch?v=Jxm206I9Z6s&t=1s" target="_blank" class="text-white-50 fw-bold fs-5 link-offset-3 link-underline-light link-underline-opacity-75">Video: "Mercedes-Benz Classic – Dream Cars"</a>
     </div>
 
     <div class="m-lg-5"> <!-- Container for text explaining what the site is all about -->
@@ -47,41 +53,57 @@
 
 <main id="main-content" class="content w-90 rounded-5 pb-4"> <!-- Start of main content -->
 
-    <div class="container my-5 text-center rounded-5 w-100 car-section-bg"> <!-- First container about a specific car - C126 -->
+    <section class="container my-5 text-center rounded-5 w-100 car-section-bg"> <!-- First container about a specific car - C126 -->
         <h2 class="fw-bold text-black pt-5">C126</h2>
         <p class="fs-4 text-black-50 p-0">The Ultimate Luxury Coupe</p>
         <a href="HTML/C126.html" class="btn bg-primary rounded-pill px-4 py-2 mb-4 text-white">Learn more</a>
-        <div class="d-flex justify-content-center pb-5">
-            <img src="Media/C126.png" alt="Mercedes-Benz W126 Coupe" class="img-fluid rounded" style="max-height: 400px;">
-        </div>
-    </div> <!-- End of container about C126 -->
+        <figure class="d-flex justify-content-center pb-5">
+            <img src="Media/C126.png" alt="Mercedes-Benz W126 Coupe" class="img-fluid rounded showroom-car">
+        </figure>
+    </section> <!-- End of container about C126 -->
 
-    <div class="container my-5 text-center rounded-5 w-100 car-section-bg"> <!-- W124 container -->
+    <section class="container my-5 text-center rounded-5 w-100 car-section-bg"> <!-- W124 container -->
         <h2 class="fw-bold text-black pt-5">W124</h2>
         <p class="fs-4 text-black-50 p-0">The Supercar in a Suit</p>
         <a href="HTML/W124EVO2.html" class="btn bg-primary rounded-pill px-4 py-2 mb-4 text-white">Learn more</a>
-        <div class="d-flex justify-content-center pb-5">
-            <img src="Media/W124.png" alt="Mercedes-Benz W124 Coupe" class="img-fluid rounded" style="max-height: 400px;">
-        </div>
-    </div> <!-- End of container about W124 -->
+        <figure class="d-flex justify-content-center pb-5">
+            <img src="Media/W124.png" alt="Mercedes-Benz W124 Coupe" class="img-fluid rounded showroom-car">
+        </figure>
+    </section> <!-- End of container about W124 -->
 
-    <div class="container my-5 text-center rounded-5 w-100 car-section-bg"> <!-- R107 container -->
+    <section class="container my-5 text-center rounded-5 w-100 car-section-bg"> <!-- R107 container -->
         <h2 class="fw-bold text-black pt-5">R107</h2>
         <p class="fs-4 text-black-50 p-0">The Timeless Roadster</p>
         <a href="HTML/R107.html" class="btn bg-primary rounded-pill px-4 py-2 mb-4 text-white">Learn more</a>
-        <div class="d-flex justify-content-center pb-5">
-            <img src="Media/R107.png" alt="Mercedes-Benz R107 Roadster" class="img-fluid rounded" style="max-height: 400px;">
-        </div>
-    </div> <!-- End of container about R107 -->
+        <figure class="d-flex justify-content-center pb-5">
+            <img src="Media/R107.png" alt="Mercedes-Benz R107 Roadster" class="img-fluid rounded showroom-car">
+        </figure>
+    </section> <!-- End of container about R107 -->
+
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <a href="Media/Mercedes_History.jpg" target="_blank">
+      <img src="Media/Mercedes_History.jpg" alt="Historic Mercedes-Benz model" class="img-fluid rounded-5 shadow">
+        </a>
+    </div>
+    <div class="col-12 col-lg-6">
+      <h3 class="fw-bold mb-3">Legacy in Motion</h3>
+      <p class="fs-5 text-white-50">
+        For over a century, Mercedes-Benz has blended precision engineering with luxury design. From the early innovations of Karl Benz to today's cutting-edge technology, every vehicle tells a story of passion, power, and performance.
+      </p>
+    </div>
+  </div>
+</section>
 
     <div> <!-- Start of form -->
         <div class="container my-5 p-4 feedback-form">
             <h2 class="text-center mb-4">⭐Car Enthusiast Feedback Form⭐️</h2>
-            <form>
+            <form method="POST" action="mailto:alexghezha@gmail.com" enctype="text/plain">
                 <p><small class="text-white-50">* Indicates required field.</small></p>
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control rounded-3 text-white" id="name" placeholder="Name*" required>
+                    <input type="text" class="form-control rounded-3 text-white" id="name" name="userName" maxlength="120" size="30" placeholder="Name*" required>
                 </div>
 
                 <fieldset class="mb-3" aria-labelledby="favorite-mercedes-label">
@@ -98,26 +120,34 @@
                         <input class="form-check-input" type="radio" name="mercedesChoice" id="r107" value="R107">
                         <label class="form-check-label" for="r107">R107</label>
                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mercedesChoice" id="otherMercedes" value="Other">
+                        <label class="form-check-label" for="otherMercedes">Other</label>
+                    </div>
                 </fieldset>
 
                 <div class="mb-3">
                     <label for="thoughts" class="form-label">Your thoughts:</label>
-                    <textarea class="form-control rounded-4" id="thoughts" rows="3" placeholder="Your thoughts:"></textarea>
+                    <textarea class="form-control rounded-4" id="thoughts" maxlength="360" rows="3" name="userThoughts" placeholder="Your thoughts:"></textarea>
                 </div>
 
                 <fieldset class="mb-4" aria-labelledby="transportation-types-label">
                     <legend id="transportation-types-label" class="form-label">What type of transportation do you like?</legend>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="cars">
+                        <input class="form-check-input" type="checkbox" id="cars" name="transportation choice" value="Car">
                         <label class="form-check-label" for="cars">I like cars</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="bicycles">
+                        <input class="form-check-input" type="checkbox" id="bicycles" name="transportation choice" value="Bicycle">
                         <label class="form-check-label" for="bicycles">I like bicycles</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="trains">
+                        <input class="form-check-input" type="checkbox" id="trains" name="transportation choice" value="Train">
                         <label class="form-check-label" for="trains">I like trains</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="otherTransport" name="transportation choice" value="Other">
+                        <label class="form-check-label" for="otherTransport">Other transportation</label>
                     </div>
                 </fieldset>
 
@@ -132,17 +162,18 @@
 </main>  <!-- End of main content -->
 
 <footer> <!-- Footer with Content Rights -->
-    <div class="w-100 bg-black text-white py-4 text-center" style="font-size: 0.9rem;">
+    <div class="w-100 bg-black text-white py-4 text-center footer-note">
         <p class="mb-1">Created by Oleksii Hezha</p>
         <p class="mb-1">
             Some of the Images are sourced from
-            <a href="https://www.carsized.com/en/" class="text-white fw-bold link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" target="_blank" rel="noopener noreferrer">Carsized.com</a>
+            <a href="https://www.carsized.com/en/" class="text-white-50 fw-bold link-offset-3 link-underline-light link-underline-opacity-75 footer-link" target="_blank" rel="noopener noreferrer">Carsized.com</a>
         </p>
-        <p class="text-white-50 mb-0" style="font-size: 0.85rem;">
+        <p class="text-white-50 mb-0 footer-link">
             Disclaimer: This website is an independent project and is not affiliated with, endorsed by, or sponsored by Mercedes-Benz Group AG.
             All trademarks, including "Mercedes" and the Mercedes-Benz logo, are the property of Mercedes-Benz Group AG.
         </p>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

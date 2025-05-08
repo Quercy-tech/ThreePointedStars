@@ -5,16 +5,21 @@
     <title>C126</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/print.css" media="print">
     <link rel="icon" type="image/png" href="../Media/favicon.png">
 </head>
 <body class="bg-black m-5 p-3 text-white">
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <nav>
     <div class="d-flex justify-content-around w-100 fixed-top bg-black nav-border">
-        <a href="../index.html"><img src="../Media/Logo_For_Website.png" alt="Site Logo" class="img-fluid m-2" style="max-height: 60px"></a>        <a href="../index.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Home page</a>
+        <a href="../index.html" id="logoLink"><img src="../Media/SimpleMercedesLogo.png" alt="Mercedes Logo" class="img-fluid m-2 header-logo" id="siteLogo"><img src="../Media/MercedesTextLogo.png" alt="Site text Logo" class="img-fluid m-2 header-logo"></a>
+        <a href="../index.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Home page</a>
         <a href="C126.html" class="text-white-50 fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">C126</a>
         <a href="W124EVO2.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">W124</a>
         <a href="R107.html" class="text-white fw-bold fs-4 p-4 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">R107</a>
+        <button id="toggle-contrast" title="Toggle high contrast mode" class="high-contrast-toggle">🌓</button>
     </div>
 </nav>
 
@@ -24,19 +29,23 @@
     <h3 class="text-secondary">Ultimate sedan - top 1</h3>
 </div> <!-- End of headline -->
 
-<main class="content rounded-5 pb-4"> <!-- Start of the content -->
+<main id="main-content" class="content rounded-5 pb-4"> <!-- Start of the content -->
 
     <div class="d-flex justify-content-center"> <!-- Main image -->
-        <img src="../Media/W126_Outside.jpeg" class="img-fluid p-3 rounded-5" style="width: 100%; max-width: 1350px;" alt="Photo of Mercedes W124 from outside">
+        <a href="../Media/W126_Outside.jpeg" target="_blank">
+        <img src="../Media/W126_Outside.jpeg" class="img-fluid p-3 rounded-5 big-image" alt="Photo of Mercedes W124 from outside">
+        </a>
     </div> <!-- End -->
 
-    <div class="d-flex justify-content-center"> <!-- Link to the images (outside + engine) -->
-        <a href="https://www.pistonheads.com/news/ph-spottedykywt/mercedes-benz-560-sec-c126--the-brave-pill/42502" target="_blank" class="text-white-50 fw-bold fs-5 mb-2 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Origin of the photos of the car</a>
-    </div>
+    <aside class="d-flex justify-content-center">
+      <a href="https://www.pistonheads.com/news/ph-spottedykywt/mercedes-benz-560-sec-c126--the-brave-pill/42502" target="_blank" class="text-white-50 fw-bold fs-5 link-offset-3 link-underline-light link-underline-opacity-75">
+        Origin of the photos of the car
+      </a>
+    </aside>
 
-    <div class="container-fluid px-5"> <!-- The description of the car -->
+    <article class="container-fluid px-5"> <!-- The description of the car -->
         <div class="d-flex justify-content-center mb-4">
-        <h2 class="fw-bold fs-2">The Ultimate Luxury Coupe</h2>
+        <h2 class="fw-bold fs-2 mt-4">The Ultimate Luxury Coupe</h2>
         </div>
         <p class="fs-4 px-5">If there’s one car that defines class, power, and presence, it’s the <strong>Mercedes-Benz 560 SEC</strong>. As the flagship coupe of the legendary W126 S-Class, the 560 SEC was more than just a car—it was a statement. Built for those who wanted prestige, power, and elegance all in one package, this was the dream car of the 1980s.</p>
 
@@ -54,7 +63,9 @@
         </ul>
 
         <div class="d-flex justify-content-center"> <!-- Engine image -->
-            <img src="../Media/W126_Engine.jpeg" class="img-fluid m-4 p-3 rounded-5" style="width: 100%; max-width: 1350px" alt="Photo of Mercedes W124 from outside">
+            <a href="../Media/W126_Engine.jpeg" target="_blank">
+            <img src="../Media/W126_Engine.jpeg" class="img-fluid m-4 p-3 rounded-5 big-image" alt="Photo of Mercedes W124 from outside">
+                </a>
         </div> <!-- End -->
 
         <h3 class="mt-4 fw-bold">Luxury That Set the Standard</h3>
@@ -67,12 +78,16 @@
         </ul>
 
         <div class="d-flex justify-content-center"> <!-- Inside image -->
-            <img src="../Media/W126_Inside.jpeg" class="img-fluid p-3 rounded-5" style="width: 100%; max-width: 1350px" alt="Photo of Mercedes W124 from outside">
+            <a href="../Media/W126_Inside.jpeg" target="_blank">
+            <img src="../Media/W126_Inside.jpeg" class="img-fluid p-3 rounded-5 big-image" alt="Photo of Mercedes W124 from outside">
+            </a>
         </div> <!-- End -->
 
-        <div class="d-flex justify-content-center"> <!-- Link to the inside -->
-            <a href="https://www.classic-sterne.de/en/cars/car-details/mercedes-benz-560-sec-6-0-4v-amg-c126.html" target="_blank" class="text-white-50 fw-bold fs-5 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Photos of the car on auction</a>
-        </div>
+        <aside class="d-flex justify-content-center">
+          <a href="https://www.classic-sterne.de/en/cars/car-details/mercedes-benz-560-sec-6-0-4v-amg-c126.html" target="_blank" class="text-white-50 fw-bold fs-5 link-offset-3 link-underline-light link-underline-opacity-75">
+            Photos of the car on auction
+          </a>
+        </aside>
 
         <h3 class="mt-4">Why the 560 SEC Is Still a Legend Today</h3>
         <p class="fs-4 px-5">The W126 560 SEC wasn’t just a car—it was <strong>THE</strong> car. Even today, it remains a timeless classic with:</p>
@@ -89,21 +104,37 @@
             src="../Media/W126_Commercial.mp4"
             poster="../Media/W126_Commercial_Poster.png"
             controls
-            class="object-fit-cover rounded-5 ratio ratio-16x9"
+            class="object-fit-cover rounded-5 ratio ratio-16x9 d-print-none"
             aria-label="Mercedes-Benz W126 video"
             style="max-width: 1500px; max-height: 1000px;">
     </video>
+    <img src="../Media/W126_Commercial_Poster.png" alt="Poster image of Mercedes-Benz 560 SEC commercial" class="img-fluid rounded-5 my-3 d-none d-print-block" style="max-width: 1500px; max-height: 1000px;">
     </div>
+        <details class="text-white mt-3 details-car">
+            <summary class="fs-5 fw-bold">Full video description: Mercedes-Benz 560 SEC Commercial</summary>
+            <div class="fs-5 mt-2">
+                <p>The commercial opens with a wide shot of a black Mercedes-Benz 560 SEC cruising through scenic Miami roads.
+                    The camera cuts to close-ups of the grille and emblem, emphasizing the car’s iconic front design.
+                    The narrator voice is deep and confident.”</p>
+            </div>
+        </details>
 
         <div class="d-flex justify-content-center"> <!-- Link to the video -->
-            <a href="https://www.youtube.com/watch?v=jwNzHr0EKjs" target="_blank" class="text-white-50 fw-bold fs-5 mt-3 link-offset-2-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">Video: "Mercedes-Benz 560 SEC Commercial"</a>
+            <a href="https://www.youtube.com/watch?v=jwNzHr0EKjs" target="_blank" class="text-white-50 fw-bold fs-5 m-4 link-offset-3 link-underline-light link-underline-opacity-75">Video: "Mercedes-Benz 560 SEC Commercial"</a>
         </div>
 
 
         <div class="table-responsive mt-5"> <!-- Table with comparison of cars -->
             <h3 class="text-center mb-4">🏁Legends Specs Comparison🏁</h3>
             <table class="table table-bordered table-dark text-center align-middle" aria-describedby="tableDesc">
-                <caption class="text-center text-white-50 mb-2">Comparison of C126 560 SEC, W124 Evolution II, and R107 560 SL</caption>
+                <caption class="text-center text-white-50 mb-2">
+                  <details>
+                    <summary class="text-white fw-bold">🔽 Click to view table description</summary>
+                    <p class="mt-2">
+                      This comparison table highlights the technical specifications, performance figures, and distinctive features of three iconic Mercedes-Benz models: the luxurious C126 560 SEC coupe, the motorsport-inspired W124 Evolution II sports sedan, and the timeless R107 560 SL convertible. Use this overview to explore how each model stands out in its era.
+                    </p>
+                  </details>
+                </caption>
                 <thead>
                 <tr>
                     <th scope="col">Specification</th>
@@ -134,7 +165,7 @@
                 Specifications comparison among three iconic Mercedes-Benz models: C126 560 SEC, W124 Evolution II, and R107 560 SL.
             </p>
         </div>
-    </div>  <!-- End of table -->
+    </article>
 </main> <!-- End of content -->
 
 <footer>
@@ -146,6 +177,6 @@
         </p>
     </div>
 </footer>
-
+<script src="../script.js"></script>
 </body>
 </html>
